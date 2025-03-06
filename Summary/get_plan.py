@@ -23,13 +23,13 @@ get_plan(1000, 6, 20)  # [1200, 1440, 1728, 2073, 2487, 2984]
 import math
 
 def get_plan(current_production, months, percent):
-    # write your code here
+    # # write your code here
     my_list = []
     for month in range(months):
-        current_production += current_production * percent/100
-        current_production = math.floor(current_production)
+        current_production += math.floor(current_production * percent/100)
         my_list.append(current_production)
     return my_list
+
 
 result = get_plan(1000, 6, 20)
 print(result)
