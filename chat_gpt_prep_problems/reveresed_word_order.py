@@ -7,6 +7,6 @@ function should return a new string with words in reverse order, but with only a
 def reverse_words(s: str) -> str:
     word_l = s.split()
     reversed_l = reversed(word_l)
-    return "".join(word.replace(" ", "") + " " for word in reversed_l)
+    return " ".join(reversed_l)
 
 print(reverse_words("  asadfa  sadfasd  "))
